@@ -20,9 +20,15 @@
     "simple",
     "node"
   ],
-
   "bugs": {
     "url": "https://github.com/ollipal/minimal-password-prompt/issues"
   },
-  "homepage": "https://github.com/ollipal/minimal-password-prompt#readme"
+  "homepage": "https://github.com/ollipal/minimal-password-prompt#readme",
+  "devDependencies": {
+    "eslint": "^7.20.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.3.1"
+  }
 }
