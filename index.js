@@ -1,43 +1,48 @@
-const startProcessingStdin = (onData) => {
-  process.stdin.setEncoding('utf-8');
-  process.stdin.setRawMode(true);
-  process.stdin.resume();
-  process.stdin.on('data', onData);
+const stdin = process.stdin;
+const stdout = process.stdout;
+
+const captureStdin = (onData) => {
+  stdin.setEncoding('utf-8');
+  stdin.setRawMode(true);
+  stdin.on('data', onData);
+  stdin.resume();
 };
 
-const stopProcessingStdin = (onData) => {
-  process.stdin.removeListener('data', onData);
-  process.stdin.pause();
-  process.stdin.setRawMode(false);
-  process.stdout.write('\n');
+const releaseStdin = (onData) => {
+  stdin.pause();
+  stdin.removeListener('data', onData);
+  stdin.setRawMode(false);
+  stdout.write('\n');
 };
 
-const prompt = (question, ctrlCExits = true) => {
-  return new Promise((resolve, reject) => {
+const prompt = (question, ctrlcExits = true) => (
+  new Promise((resolve, reject) => {
     let input = '';
     const onData = (data) => {
       switch (data) {
-        case '\n': // EOL
-        case '\r': // EOL
+        case '\u000A': // \n
+        case '\u000D': // \r
         case '\u0004': // Ctrl+D
-          stopProcessingStdin(onData);
+          releaseStdin(onData);
           resolve(input);
           break;
         case '\u0003': // Ctrl+C
-          stopProcessingStdin(onData);
-          ctrlCExits
+          releaseStdin(onData);
+          ctrlcExits // exit or raise error
             ? process.exit()
-            : reject(new Error('Ctrl + C / SIGINT'));
+            : reject(new Error('Ctrl+C'));
           break;
-        default:
-          [8, 127].includes(data.charCodeAt(0))
-            ? input = input.slice(0, -1) // backspace or DEL
-            : input += data; // other char
+        case '\u0008': // Backspace
+        case '\u007F': // Delete
+          input = input.slice(0, -1);
+          break;
+        default: // any other
+          input += data;
       };
     };
-    startProcessingStdin(onData);
-    process.stdout.write(question);
-  });
-};
+    captureStdin(onData);
+    stdout.write(question);
+  })
+);
 
 module.exports = prompt;
