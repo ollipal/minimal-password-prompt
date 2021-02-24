@@ -1,0 +1,28 @@
+{
+  "name": "minimal-password-prompt",
+  "version": "1.0.0",
+  "description": "Minimal hidden password prompt with no dependencies for Node.js.",
+  "author": "Olli Paloviita @ollipal",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ollipal/minimal-password-prompt.git"
+  },
+  "keywords": [
+    "password",
+    "prompt",
+    "minimal",
+    "hidden",
+    "simple",
+    "node"
+  ],
+
+  "bugs": {
+    "url": "https://github.com/ollipal/minimal-password-prompt/issues"
+  },
+  "homepage": "https://github.com/ollipal/minimal-password-prompt#readme"
+}
