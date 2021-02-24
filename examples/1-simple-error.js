@@ -1,4 +1,4 @@
-const prompt = require('../index');
+const prompt = require('minimal-password-prompt'); // if cloned: require('../index');
 
 // Second parameter 'ctrlCExits' has value false.
 // Now will throw error if ctrl+c is pressed during prompt

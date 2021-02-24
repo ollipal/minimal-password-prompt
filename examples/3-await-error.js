@@ -1,4 +1,4 @@
-const prompt = require('../index');
+const prompt = require('minimal-password-prompt'); // if cloned: require('../index');
 
 /*
 The same as previous example, but the second parameter
