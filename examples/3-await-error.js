@@ -2,9 +2,9 @@ const prompt = require('minimal-password-prompt'); // if cloned: require('../ind
 
 /*
 The same as previous example, but the second parameter
-'ctrlCExits' has value false.
+'ctrlcExits' has value false.
 
-This means that if ctrl+c is pressed during prompt
+This means that if Ctrl+C is pressed during prompt
 it will throw an error that can be handled in catch block
 */
 
@@ -19,7 +19,7 @@ const getPassword = async () => {
     }
     return password;
   } catch (err) {
-    console.log('ctrl+c was pressed during the prompt'); // ctrl+c can be handled here
+    console.log('ctrl+c was pressed during the prompt'); // Ctrl+C can be handled here
   }
 };
 
