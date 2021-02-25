@@ -1,20 +1,19 @@
 # minimal-password-prompt
 
-Minimal hidden password prompt for Node.js! Install with [npm](https://www.npmjs.com/package/minimal-password-prompt).
+Minimal hidden password prompt for Node.js! ([npm](https://www.npmjs.com/package/minimal-password-prompt))
 
 ![prompt-password example](https://github.com/ollipal/minimal-password-prompt/blob/main/misc/example.gif)
+
+## Simple, no extra hassles
 
 | package                                                                          | dependencies                                               | dependents                                                 | total lines of production code                                                                        |
 |----------------------------------------------------------------------------------|------------------------------------------------------------|------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
 | [minimal-password-prompt](https://www.npmjs.com/package/minimal-password-prompt) | [0](https://www.npmjs.com/package/minimal-password-prompt) | [0](https://www.npmjs.com/package/minimal-password-prompt) | [48](https://github.com/ollipal/minimal-password-prompt/blob/main/misc/lines-of-code-comparison.md )  |
 | [password-prompt](https://www.npmjs.com/package/password-prompt)                 | [2](https://www.npmjs.com/package/password-prompt)         | [43](https://www.npmjs.com/package/password-prompt)        | [2147](https://github.com/ollipal/minimal-password-prompt/blob/main/misc/lines-of-code-comparison.md) |
 
-## Simple, no extra hassles
-
-- no dependencies
-- hides all user input
-- easy to use
-- **less than 50 lines of code**
+- No dependencies
+- Multiplatform: Windows, Linux and Mac support
+- **Less than 50 lines of code**
 
 Seriously, you can also just copy and paste to your project:
 
@@ -105,7 +104,10 @@ Parameters:
 Returns:
   * `Promise<String>` user input during prompt
 
-## TODO
+# Installation
 
-- comparison to other similar packages
-- test more platforms
+Install with [npm](https://www.npmjs.com/package/minimal-password-prompt):
+
+```
+npm install --save minimal-password-prompt
+```
