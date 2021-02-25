@@ -1,5 +1,7 @@
 # minimal-password-prompt
 
+![prompt-password example](misc/example.gif)
+
 Minimal hidden password prompt for Node.js! Install with [npm](https://www.npmjs.com/package/minimal-password-prompt):
 
 ```
@@ -104,6 +106,5 @@ Returns:
 
 ## TODO
 
-- Usage GIF
 - comparison to other similar packages
 - test more platforms
