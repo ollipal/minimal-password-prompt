@@ -1,6 +1,6 @@
 # minimal-password-prompt
 
-![prompt-password example](misc/example.gif)
+![prompt-password example](https://github.com/ollipal/minimal-password-prompt/blob/main/misc/example.gif)
 
 Minimal hidden password prompt for Node.js! Install with [npm](https://www.npmjs.com/package/minimal-password-prompt):
 
@@ -91,7 +91,7 @@ const prompt = require('minimal-password-prompt');
 })();
 ```
 
-More examples [here](examples)
+More examples [here](https://github.com/ollipal/minimal-password-prompt/tree/main/examples)
 
 # prompt reference
 

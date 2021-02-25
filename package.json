@@ -5,6 +5,7 @@
   "author": "Olli Paloviita @ollipal",
   "license": "MIT",
   "main": "index.js",
+  "files": [],
   "scripts": {
     "lint": "npx eslint --config misc/.eslintrc.json . --fix"
   },
