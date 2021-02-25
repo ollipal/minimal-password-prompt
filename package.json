@@ -7,7 +7,9 @@
   "main": "index.js",
   "files": [],
   "scripts": {
-    "lint": "npx eslint --config misc/.eslintrc.json . --fix"
+    "lint": "npx eslint --config misc/.eslintrc.json . --fix",
+    "patch": "npm version patch -m 'Version %s released' && git push && git push --tags",
+    "release": "npm run lint && npm run patch && npm publish"
   },
   "repository": {
     "type": "git",
