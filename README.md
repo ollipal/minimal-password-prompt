@@ -1,6 +1,6 @@
 # minimal-password-prompt
 
-Minimal hidden password prompt for Node.js! ([npm](https://www.npmjs.com/package/minimal-password-prompt))
+Minimal hidden password prompt for Node.js! ([npm](https://www.npmjs.com/package/minimal-password-prompt))([github](https://github.com/ollipal/minimal-password-prompt))
 
 ![prompt-password example](https://github.com/ollipal/minimal-password-prompt/blob/main/misc/example.gif)
 
@@ -15,7 +15,7 @@ Minimal hidden password prompt for Node.js! ([npm](https://www.npmjs.com/package
 - Multiplatform: Windows, Linux and Mac support
 - **Less than 50 lines of code**
 
-Seriously, you can also just copy and paste to your project:
+Seriously, you can also just copy and paste to your project ([index.js](https://github.com/ollipal/minimal-password-prompt/blob/main/index.js)):
 
 ```js
 const stdin = process.stdin;
@@ -95,13 +95,13 @@ More examples [here](https://github.com/ollipal/minimal-password-prompt/tree/mai
 
 # prompt reference
 
-Parameters:
+**Parameters:**
   * `question (String)` prompt output before user input
   * `ctrlcExits (Boolean)`, optional
     * *true:* Ctrl+C exits program (default)
     * *false:* Ctrl+C throws error
 
-Returns:
+**Returns:**
   * `Promise<String>` user input during prompt
 
 # Installation
