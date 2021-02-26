@@ -1,6 +1,5 @@
-# minimal-password-prompt
-
-Minimal hidden password prompt for Node.js! ([npm](https://www.npmjs.com/package/minimal-password-prompt))([github](https://github.com/ollipal/minimal-password-prompt))
+# minimal-password-prompt ![npm bundle size](https://img.shields.io/bundlephobia/min/minimal-password-prompt?style=flat-square) ![NPM](https://img.shields.io/npm/l/minimal-password-prompt?style=flat-square)
+Minimal hidden password prompt for Node.js! [[npm](https://www.npmjs.com/package/minimal-password-prompt)] [[github](https://github.com/ollipal/minimal-password-prompt)]
 
 ![prompt-password example](https://github.com/ollipal/minimal-password-prompt/blob/main/misc/example.gif)
 
