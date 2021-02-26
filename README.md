@@ -12,7 +12,7 @@ Minimal hidden password prompt for Node.js! ([npm](https://www.npmjs.com/package
 | [password-prompt](https://www.npmjs.com/package/password-prompt)                 | [2](https://www.npmjs.com/package/password-prompt)         | [43](https://www.npmjs.com/package/password-prompt)        | [2147](https://github.com/ollipal/minimal-password-prompt/blob/main/misc/lines-of-code-comparison.md) |
 
 - No dependencies
-- Multiplatform: tested on Windows, Linux and MacOS
+- Multiplatform: tested on Windows, Linux and macOS
 - Minimal: **[Less than 50 lines of code](https://github.com/ollipal/minimal-password-prompt/blob/main/index.js)**
 
 Seriously, you can also just copy and paste to your project:
