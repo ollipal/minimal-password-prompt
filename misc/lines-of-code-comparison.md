@@ -2,7 +2,7 @@
 
 Only production lines are counted, so no test/dev files.
 
-Done 2021-02-21, commit 8c65afe5c8d9eaabd2f07e454c872d41a97fc42d
+2021-02-21, commit 8c65afe5c8d9eaabd2f07e454c872d41a97fc42d
 
 Done with Python. To reproduce:
 
