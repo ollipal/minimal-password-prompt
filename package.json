@@ -1,6 +1,6 @@
 {
   "name": "minimal-password-prompt",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Minimal hidden password prompt with no dependencies for Node.js.",
   "author": "Olli Paloviita @ollipal",
   "license": "MIT",
