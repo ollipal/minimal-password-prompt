@@ -9,7 +9,8 @@
   "scripts": {
     "lint": "npx eslint --config misc/.eslintrc.json . --fix",
     "patch": "npm version patch -m 'Version %s released' && git push && git push --tags",
-    "release": "npm run lint && npm run patch && npm publish"
+    "release": "npm run lint && npm run patch && npm publish",
+    "test": "cd misc && node manual-test.js"
   },
   "repository": {
     "type": "git",
